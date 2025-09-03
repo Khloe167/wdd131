@@ -1,98 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* base.css */
 
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2c3e50;
-    --accent-color: #e74c3c;
-    --light-color: #ecf0f1;
-    --dark-color: #2b2e4a;
-    --heading-font: 'Roboto', sans-serif;
-    --body-font: 'Roboto', sans-serif;
+  --primary: #2c3e50;
+  --secondary: #3498db;
+  --accent: #ecf0f1;
+  --white: #ffffff;
+  --dark-text: #2d2d2d;
+  --soft-shadow: rgba(0, 0, 0, 0.15);
 }
 
 body {
-    font-family: var(--body-font);
-    background-color: var(--light-color);
-    color: var(--dark-color);
-    margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--accent);
+  color: var(--dark-text);
+  line-height: 1.6;
 }
 
 header {
-    background-color: var(--secondary-color);
-    color: var(--light-color);
-    padding: 1rem;
-    text-align: center;
+  background: var(--primary);
+  color: var(--white);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 10px var(--soft-shadow);
 }
 
-#course-title {
-    display: block;
-    font-family: var(--heading-font);
-    font-size: 1.5em;
-    font-weight: 700;
-    margin-bottom: 1rem;
+header #course-title {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
+  margin-top: 0.8rem;
 }
 
 nav a {
-    color: var(--light-color);
-    text-decoration: none;
-    padding: 0.75rem 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  color: var(--white);
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-    background-color: var(--primary-color);
-    color: var(--dark-color);
+  color: var(--secondary);
 }
 
 main {
-    max-width: 960px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
 }
 
-main h1 {
-    font-family: var(--heading-font);
-    font-weight: 700;
-    text-align: center;
-    color: var(--secondary-color);
+h1, h2 {
+  color: var(--primary);
 }
 
 .card {
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 1.5rem;
-    align-items: center;
+  background: var(--white);
+  border-left: 6px solid var(--secondary);
+  border-radius: 10px;
+  padding: 1.2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px var(--soft-shadow);
+  transition: transform 0.3s ease;
 }
 
-.card h2 {
-    font-family: var(--heading-font);
-    color: var(--accent-color);
-    grid-column: 1 / -1;
-    text-align: center;
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 8px;
+  max-width: 70%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+section li a {
+  color: var(--secondary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+section li a:hover {
+  color: #1d6fa5;
+  text-decoration: underline;
 }
 
 footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: var(--secondary-color);
-    color: var(--light-color);
-    margin-top: 2rem;
+  text-align: center;
+  padding: 1.2rem;
+  background: var(--primary);
+  color: var(--white);
+  font-weight: 500;
+  margin-top: 3rem;
 }
+
+
