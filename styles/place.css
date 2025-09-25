@@ -1,3 +1,7 @@
+:root {
+  --main-red: #c8102e;
+  --main-radius: 8px;
+}
 /* Reset some defaults */
 * {
   margin: 0;
@@ -23,6 +27,16 @@ body {
 .site-header h1 {
   font-size: 2.5rem;
 }
+.site-header::after {
+  content: "";
+  display: block;
+  margin: 0.5rem auto 0;
+  width: 60px;
+  height: 4px;
+  background: #fff;
+  border-radius: 2px;
+}
+
 
 /* Hero section */
 .hero-section {
@@ -35,6 +49,7 @@ body {
   height: auto;
   display: block;
 }
+
 
 /* Overlay boxes */
 .overlay {
@@ -82,4 +97,18 @@ body {
 
 .site-footer p {
   margin: 0.3rem 0;
+}
+/* Responsive: stack overlays on small screens */
+@media (max-width: 600px) {
+  .data-box,
+  .weather-box {
+    position: static;
+    width: 90%;
+    margin: 1rem auto;
+    display: block;
+  }
+  .overlay {
+    width: 90%;
+    margin: 1rem auto;
+  }
 }

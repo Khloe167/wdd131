@@ -33,3 +33,7 @@ function setFooterMeta() {
 
 displayWindChill(TEMPERATURE_C, WIND_SPEED_KMH);
 setFooterMeta();
+
+const lastModified = new Date(document.lastModified);
+document.getElementById("last-modified").textContent = lastModified.toLocaleString();
+document.getElementById("last-modified").setAttribute("datetime", lastModified.toISOString());
