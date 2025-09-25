@@ -1,0 +1,85 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #222;
+}
+
+/* Header */
+.site-header {
+  background-color: #c8102e; /* red like your screenshot */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.site-header h1 {
+  font-size: 2.5rem;
+}
+
+/* Hero section */
+.hero-section {
+  position: relative;
+  text-align: center;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Overlay boxes */
+.overlay {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  width: 260px;
+}
+
+/* Put data box on the top-left side */
+.data-box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-align: left;
+}
+/* Put weather box on the bottom-right side */
+.weather-box {
+  bottom: 20px;
+  right: 20px;
+}
+ 
+.data-box ul {
+  list-style: none;
+}
+
+.data-box li {
+  margin: 0.2rem 0;
+}
+
+.weather-box p {
+  margin: 0.3rem 0;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #c8102e;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.site-footer p {
+  margin: 0.3rem 0;
+}

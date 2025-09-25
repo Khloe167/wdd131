@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paris — Travel Guide</title>
+  <link rel="stylesheet" href="styles/place.css" />
+  <script defer src="scripts/place.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Paris</h1>
+  </header>
+
+  <main class="hero-section">
+    <!-- Hero image -->
+    <picture>
+      <source srcset="images/paris-small.webp" media="(max-width: 500px)" type="image/webp">
+      <source srcset="images/paris-medium.webp" media="(max-width: 1000px)" type="image/webp">
+      <img src="images/paris.webp" alt="Paris skyline with Eiffel Tower" class="hero-img">
+    </picture>
+
+    <!-- Data box -->
+    <section class="overlay data-box">
+      <h3>Data</h3>
+      <ul>
+        <li><strong>Area:</strong> 105 km²</li>
+        <li><strong>Population:</strong> 2,148,000 (city)</li>
+        <li><strong>Capital:</strong> Paris</li>
+        <li><strong>Language:</strong> French</li>
+        <li><strong>Currency:</strong> Euro (€)</li>
+        <li><strong>Time Zone:</strong> UTC+1 (CET)</li>
+        <li><strong>Calling Code:</strong> +33</li>
+        <li><strong>Internet TLD:</strong> .fr</li>
+      </ul>
+    </section>
+
+    <!-- Weather box -->
+    <section class="overlay weather-box">
+      <h3>Weather</h3>
+      <img src="images/1530391_weather_clouds_sun_sunny_icon.svg" alt="Weather icon" class="weather-svg" width="64" height="64" />
+      <p><strong>Temperature:</strong> <span id="temp-display">15 °C</span></p>
+      <p><strong>Conditions:</strong> Partly Cloudy </p>
+      <p><strong>Wind:</strong> <span id="wind-display">10 km/h</span></p>
+      <p><strong>Wind Chill:</strong> <span id="windchill-display">N/A</span></p>
+      
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> Chloe Agbah | Paris</p>
+    <p>Last Modification: <time id="last-modified"></time></p>
+  </footer>
+</body>
+</html>
