@@ -87,13 +87,7 @@ body {
 }
 
 /* Footer */
-.site-footer {
-  background-color: var(--main-red);
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-}
+.site-footer{background-color:var(--main-red);color:#fff;text-align:center;padding:1rem;font-size:.9rem}
 
 .site-footer p {
   margin: 0.3rem 0;
