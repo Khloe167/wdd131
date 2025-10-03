@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131  Dynamic Web Fundamentals | Chloe Agbah</title>
+  <meta name="description" content="WDD 131 Dynamic Web Fundamentals | Chloe Agbah. ">
+  <meta name="author" content="Chloe Agbah">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="styles/form.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <script defer src="scripts/form.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Product Review Form</h1>
+  </header>
+
+  <main>
+    <form method="get" action="review.html">
+      <!-- Product Name -->
+      <label for="productName">Product Name:</label>
+      <select id="productName" name="productName" required>
+        <option value="" disabled selected>Select a Product ...</option>
+        <!-- Options will be dynamically added with JS -->
+      </select>
+
+      <!-- Overall Rating -->
+      <fieldset>
+        <legend>Overall Rating:</legend>
+        <label><input type="radio" id="rate1" name="rating" value="1" required> ☆</label>
+        <label><input type="radio" id="rate2" name="rating" value="2"> ☆☆</label>
+        <label><input type="radio" id="rate3" name="rating" value="3"> ☆☆☆</label>
+        <label><input type="radio" id="rate4" name="rating" value="4"> ☆☆☆☆</label>
+        <label><input type="radio" id="rate5" name="rating" value="5"> ☆☆☆☆☆</label>
+      </fieldset>
+
+      <!-- Date of Installation -->
+      <label for="installDate">Date of Installation:</label>
+      <input type="date" id="installDate" name="installDate" required>
+
+      <!-- Useful Features -->
+      <fieldset>
+        <legend>Useful Features (check all that apply):</legend>
+        <label><input type="checkbox" id="feature1" name="features" value="Durability"> Durability</label>
+        <label><input type="checkbox" id="feature2" name="features" value="Design"> Design</label>
+        <label><input type="checkbox" id="feature3" name="features" value="Ease of Use"> Ease of Use</label>
+        <label><input type="checkbox" id="feature4" name="features" value="Value for Money"> Value for Money</label>
+      </fieldset>
+
+      <!-- Written Review -->
+      <label for="review">Written Review (optional):</label>
+      <textarea id="review" name="review" rows="4" cols="50"></textarea>
+
+      <!-- User Name -->
+      <label for="username">Your Name (optional):</label>
+      <input type="text" id="username" name="username">
+
+      <!-- Submit -->
+      <input type="submit" value="Submit Review">
+      <header>
+    <h2>Thank You!</h2>
+  </header>
+
+  <main>
+    <p>Your review has been submitted successfully.</p>
+    <p>You have submitted <span id="reviewCount">0</span> reviews so far.</p>
+    <a href="form.html">Submit another review</a>
+  </main>
+    </form>
+  </main>
+
+  <footer>
+        <p>
+            &copy; <span id="currentyear"></span>🌹 Chloe Agbah 🌹| Lagos, Nigeria
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+  
+</body>
+</html>
