@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WDD 131  Dynamic Web Fundamentals | Chloe Agbah</title>
+  <meta name="description" content="WDD 131 Dynamic Web Fundamentals | Chloe Agbah. ">
+  <meta name="author" content="Chloe Agbah">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style/site.css" />
+  <script defer src="script/site.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="My Career Goals home">
+        <!-- simple inline SVG logo -->
+        <svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="4" fill="#2a3d66"></rect>
+          <path d="M6 14 L10 9 L14 14 L18 8" stroke="#fff" stroke-width="1.5" fill="none"></path>
+        </svg>
+        <span class="site-title">My Career Goals</span>
+      </a>
+
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">
+        ☰ <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <nav id="mainNav" class="main-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="goals.html">Career Goals</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Welcome — My Career Journey</h1>
+      <p id="dynamic-message" class="muted">Loading your daily motivation…</p>
+      <a class="cta" href="goals.html">See my career goals</a>
+    </section>
+
+    <section aria-labelledby="slideshow-title" class="section">
+      <h2 id="slideshow-title">Inspiration & Quotes</h2>
+      <div id="slideshow" class="slideshow" aria-live="polite">
+        <!-- Slides are built by JS using template literals -->
+      </div>
+      <div class="slideshow-controls">
+        <button id="prevSlide" aria-label="Previous quote">◀</button>
+        <button id="nextSlide" aria-label="Next quote">▶</button>
+      </div>
+    </section>
+
+    
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container"></div>
+        <p>
+            &copy; <span id="currentyear"></span>🌹 Chloe Agbah 🌹| Lagos, Nigeria
+    </div>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

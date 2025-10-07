@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WDD 131  Dynamic Web Fundamentals | Chloe Agbah</title>
+  <meta name="description" content="WDD 131 Dynamic Web Fundamentals | Chloe Agbah. ">
+  <meta name="author" content="Chloe Agbah">
+  <meta name="description" content="Contact form — submit feedback or questions" />
+  <link rel="stylesheet" href="style/site.css">
+  <script defer src="script/site.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Home">
+        <svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="4" fill="#2a3d66"></rect></svg>
+        <span class="site-title">My Career Goals</span>
+      </a>
+      <button id="navToggle4" class="nav-toggle" aria-expanded="false" aria-controls="mainNav4">☰</button>
+      <nav id="mainNav4" class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+          <li><a href="goals.html">Career Goals</a></li><li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <h1>Contact</h1>
+    <p>If you'd like to get in touch, leave a message below.</p>
+
+    <form id="contactForm" class="stacked-form" aria-label="Contact form">
+      <label for="nameInput">Name</label>
+      <input id="nameInput" name="name" type="text">
+
+      <label for="emailInput">Email</label>
+      <input id="emailInput" name="email" type="email" required>
+
+      <label for="messageInput">Message</label>
+      <textarea id="messageInput" name="message" rows="5" required></textarea>
+
+      <input type="submit" value="Submit" id="contactSubmit">
+    </form>
+
+    <p id="submissionInfo" class="muted">You have submitted <strong id="submitCount">0</strong> messages from this browser.</p>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container"></div>
+        <p>
+            &copy; <span id="currentyear"></span>🌹 Chloe Agbah 🌹| Lagos, Nigeria 
+    </div>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

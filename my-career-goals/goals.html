@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WDD 131  Dynamic Web Fundamentals | Chloe Agbah</title>
+  <meta name="description" content="WDD 131 Dynamic Web Fundamentals | Chloe Agbah. ">
+  <meta name="author" content="Chloe Agbah">
+  <meta name="description" content="Short- and long-term career goals with an interactive timeline" />
+  <link rel="stylesheet" href="style/site.css">
+  <script defer src="script/site.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Home">
+        <svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="4" fill="#2a3d66"></rect></svg>
+        <span class="site-title">My Career Goals</span>
+      </a>
+      <button id="navToggle3" class="nav-toggle" aria-expanded="false" aria-controls="mainNav3">☰</button>
+      <nav id="mainNav3" class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+          <li><a href="goals.html">Career Goals</a></li><li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <h1>Career Goals</h1>
+    <p>Short-term vs long-term goals. Add your milestones below.</p>
+
+    <section class="timeline-section" aria-labelledby="timeline-title">
+      <h2 id="timeline-title">Interactive Timeline</h2>
+
+      <form id="milestoneForm" class="inline-form" aria-label="Add milestone">
+        <label for="milestoneText">Milestone</label>
+        <input id="milestoneText" name="milestoneText" type="text" required>
+        <label for="milestoneDate">Target Date</label>
+        <input id="milestoneDate" name="milestoneDate" type="date" required>
+        <button type="submit">Add Milestone</button>
+      </form>
+
+      <div id="timeline" class="timeline" aria-live="polite">
+        <!-- timeline items rendered by JS -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container"></div>
+        <p>
+            &copy; <span id="currentyear"></span>🌹 Chloe Agbah 🌹| Lagos, Nigeria 
+    </div>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
